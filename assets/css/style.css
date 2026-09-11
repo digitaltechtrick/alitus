@@ -8,6 +8,7 @@
   --color-orange-strong: #E85D00;
   --color-yellow: #FFC928;
   --color-muted: #737373;
+  --color-muted-on-dark: #999999;
   --color-border: rgba(11, 11, 11, .12);
   --color-border-strong: rgba(11, 11, 11, .24);
   --shadow-card: 0 1px 2px rgba(11, 11, 11, .04), 0 16px 40px rgba(11, 11, 11, .06);
@@ -100,7 +101,22 @@ a { text-decoration: none; }
 .form-control, .form-select { border-radius: .9rem; border-color: var(--color-border-strong); background-color: var(--color-white); }
 .form-control:focus, .form-select:focus { border-color: var(--color-orange); box-shadow: 0 0 0 .25rem rgba(255, 107, 0, .16); }
 .form-status { min-height: 1.5rem; font-weight: 650; }
-.site-footer { border-top: 1px solid var(--color-border); background: var(--color-white); color: var(--color-muted); }
+.site-footer { border-top: 1px solid rgba(255, 255, 255, .08); background: var(--color-black); color: var(--color-white); padding: 4.5rem 0 2rem; }
+.site-footer-logo { display: inline-block; font-size: 1.4rem; font-weight: 800; letter-spacing: -.02em; color: var(--color-white); }
+.site-footer-logo span { color: var(--color-yellow); }
+.site-footer-logo:hover, .site-footer-logo:focus { color: var(--color-orange); }
+.site-footer-tagline { color: var(--color-muted-on-dark); font-size: .95rem; line-height: 1.65; max-width: 30rem; }
+.site-footer-heading { margin: 0 0 1.1rem; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--color-white); }
+.site-footer-links { font-size: .95rem; }
+.site-footer-links li + li { margin-top: .65rem; }
+.site-footer-links a { color: var(--color-muted-on-dark); transition: color .15s ease; }
+.site-footer-links a:hover, .site-footer-links a:focus { color: var(--color-orange); }
+.site-footer-label { display: block; margin-bottom: .15rem; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: rgba(255, 255, 255, .55); }
+.site-footer-phone { display: inline-block; padding: .45rem 0; min-height: 2.75rem; font-size: 1.15rem; font-weight: 700; color: var(--color-white); }
+.site-footer-phone:hover, .site-footer-phone:focus { color: var(--color-orange); }
+.site-footer-placeholder { color: var(--color-muted-on-dark); }
+.site-footer-call { border-radius: 999px; padding: .55rem 1.3rem; font-weight: 700; }
+.site-footer-bottom { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, .08); font-size: .85rem; color: var(--color-muted-on-dark); }
 
 @media (max-width: 991.98px) {
   .section-padding { padding: 4.5rem 0; }
