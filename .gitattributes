@@ -1,0 +1,26 @@
+# Normalize line endings: store LF in the repository for all text files
+# and check out LF on every platform, keeping working copies consistent
+# (including on Windows).
+
+* text=auto
+
+*.html  text eol=lf
+*.css   text eol=lf
+*.js    text eol=lf
+*.md    text eol=lf
+*.svg   text eol=lf
+*.json  text eol=lf
+
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Binary assets must never be normalized
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.avif  binary
+*.woff  binary
+*.woff2 binary
