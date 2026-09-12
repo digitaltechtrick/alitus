@@ -21,6 +21,23 @@
     });
   }
 
+  const offcanvasNav = document.getElementById('offcanvasNav');
+  const toggler = document.querySelector('.navbar-toggler');
+  if (offcanvasNav && window.bootstrap) {
+    const offcanvasInstance = bootstrap.Offcanvas.getOrCreateInstance(offcanvasNav);
+
+    offcanvasNav.addEventListener('click', (event) => {
+      if (event.target.closest('a[href]') && offcanvasNav.classList.contains('show')) {
+        offcanvasInstance.hide();
+      }
+    });
+
+    if (toggler) {
+      offcanvasNav.addEventListener('show.bs.offcanvas', () => toggler.setAttribute('aria-expanded', 'true'));
+      offcanvasNav.addEventListener('hidden.bs.offcanvas', () => toggler.setAttribute('aria-expanded', 'false'));
+    }
+  }
+
   const nav = document.querySelector('.site-nav');
   const updateNav = () => {
     if (nav) nav.classList.toggle('scrolled', window.scrollY > 12);
