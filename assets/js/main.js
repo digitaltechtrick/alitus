@@ -15,13 +15,6 @@
   updateNav();
   window.addEventListener('scroll', updateNav, { passive: true });
 
-  document.querySelectorAll('.navbar-collapse .nav-link').forEach((link) => {
-    link.addEventListener('click', () => {
-      const openMenu = document.querySelector('.navbar-collapse.show');
-      if (openMenu && window.bootstrap) bootstrap.Collapse.getOrCreateInstance(openMenu).hide();
-    });
-  });
-
   const form = document.getElementById('contactForm');
   const status = document.getElementById('formStatus');
   if (form) {
