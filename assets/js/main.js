@@ -35,7 +35,7 @@
         return;
       }
 
-      if (status) status.textContent = 'Form validated. We will connect real message delivery in a later step.';
+      if (status) status.textContent = 'This demo form is not connected to email yet. Please contact me directly by phone, WhatsApp or email.';
     });
   }
 })();
