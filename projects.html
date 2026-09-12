@@ -1,3 +1,284 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Selected software projects by Patrick Alituha."><meta name="theme-color" content="#0B0B0B"><title>Projects | Patrick Alituha</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"><link rel="stylesheet" href="assets/css/style.css"></head><body>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav"><div class="container"><a class="navbar-brand fw-bold" href="index.html">Patrick<span>.</span></a><button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="mainNav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li><li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li><li class="nav-item"><a class="nav-link" href="services.html">Services</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li><li class="nav-item ms-lg-2"><a class="btn btn-brand btn-sm px-3" href="contact.html">Let's Work Together</a></li></ul></div></div></nav>
-<main class="page-main"><section class="page-hero"><div class="container"><span class="eyebrow">Projects</span><h1 class="display-3 fw-bold">Selected work and experiments.</h1><p class="lead text-soft max-copy">We will gradually turn the strongest projects into proper case studies with screenshots, features, technologies and outcomes.</p></div></section><section class="section-padding"><div class="container"><div class="row g-4"><div class="col-lg-6" id="suntrack"><article class="project-card h-100"><img src="assets/images/projects/suntrack-project.svg" class="project-cover" alt="SunTrack placeholder"><div class="p-4"><span class="badge text-bg-primary">Featured</span><h2 class="h3 mt-3">SunTrack</h2><p class="text-secondary">Field-sales lead management application.</p></div></article></div><div class="col-lg-6"><article class="project-card h-100 p-4"><h2 class="h3">PatroniQ Store</h2><p class="text-secondary">E-commerce and delivery platform.</p></article></div><div class="col-lg-6"><article class="project-card h-100 p-4"><h2 class="h3">Rent Management System</h2><p class="text-secondary">A business system for property and tenant management.</p></article></div><div class="col-lg-6"><article class="project-card h-100 p-4"><h2 class="h3">Accident Detection System</h2><p class="text-secondary">An electronics and software project combining sensors, GPS and communications.</p></article></div></div></div></section></main><footer class="site-footer"><div class="container"><div class="row g-5"><div class="col-12 col-lg-5"><a class="site-footer-logo" href="index.html">AlitUs<span>.</span></a><p class="site-footer-tagline mt-3 mb-0">Building practical digital solutions, software products, and technology that create real value for people and businesses.</p></div><div class="col-12 col-sm-6 col-lg-4"><h2 class="site-footer-heading">Quick Links</h2><ul class="site-footer-links list-unstyled mb-0"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="col-12 col-sm-6 col-lg-3"><h2 class="site-footer-heading">Contact</h2><ul class="site-footer-links list-unstyled mb-0"><li><span class="site-footer-label">Phone</span><a class="site-footer-phone" href="tel:+256772918718" aria-label="Call +256 772 918 718">+256 772 918 718</a></li><li><span class="site-footer-label">Email</span><span class="site-footer-placeholder">coming soon</span></li><li><span class="site-footer-label">WhatsApp</span><span class="site-footer-placeholder">coming soon</span></li><li class="mt-3"><a class="btn btn-brand site-footer-call" href="tel:+256772918718">Call Me</a></li></ul></div></div><div class="site-footer-bottom">© <span id="currentYear"></span> Patrick Alituha / AlitUs. All rights reserved.</div></div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script><script src="assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Software and technology projects by Patrick Alituha — SunTrack, business systems, web platforms and embedded prototypes.">
+  <meta name="theme-color" content="#0B0B0B">
+  <title>Projects | Patrick Alituha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Patrick<span>.</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-brand btn-sm px-3" href="contact.html">Let's Work Together</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+    <section class="page-hero projects-hero">
+      <div class="container">
+        <span class="eyebrow">My Work</span>
+        <h1 class="display-3 fw-bold mt-3 mb-4">Projects Built Around Real Problems.</h1>
+        <p class="lead text-soft max-copy">A selection of software, business systems and technology projects I have designed and developed while learning, building and solving practical challenges.</p>
+      </div>
+    </section>
+
+    <section id="suntrack" class="featured-project section-padding">
+      <div class="container">
+        <div class="featured-inner">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <span class="product-tag">Featured Project</span>
+              <h2 class="display-4 fw-bold featured-title mt-3 mb-2">SunTrack</h2>
+              <p class="featured-cat mb-4">Field Sales & Lead Management</p>
+              <p class="lead text-soft mb-4">SunTrack is a field-sales lead management platform designed to help teams manage prospects, mobilisers, follow-ups and field activity more effectively.</p>
+              <div class="featured-block">
+                <h3 class="featured-block-title">Problem</h3>
+                <p>Field-sales teams can lose potential customers when leads, referrals and follow-ups are tracked informally.</p>
+              </div>
+              <div class="featured-block">
+                <h3 class="featured-block-title">Solution</h3>
+                <p>SunTrack provides a structured workflow for capturing leads, assigning responsibility, recording follow-ups and monitoring progress until a prospect is ready for the real-world sale process.</p>
+              </div>
+              <div class="stack-list stack-list-sm mt-4">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Laravel</span>
+                <span>REST API</span>
+                <span>Relational database</span>
+              </div>
+              <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
+                <a class="btn btn-brand btn-lg" href="#suntrack">View Details</a>
+                <span class="product-tag">In Development</span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="featured-visual">
+                <div class="featured-visual-glow" aria-hidden="true"></div>
+                <img src="assets/images/projects/suntrack-project.svg" class="featured-img" alt="SunTrack platform interface illustration" width="1200" height="675">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="mb-5">
+          <span class="eyebrow">Selected Work</span>
+          <h2 class="display-5 fw-bold mt-3 mb-0">Software, systems and prototypes.</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="project-card h-100">
+              <!-- Visual container: replace with a real screenshot when available -->
+              <div class="project-placeholder" aria-hidden="true"><span>PQ</span></div>
+              <div class="p-4 p-md-5 pt-3">
+                <span class="project-cat">E-commerce</span>
+                <h2 class="h3 mt-2 mb-2">PatroniQ Store</h2>
+                <p class="text-secondary">An online shopping and delivery platform designed for managing products, customer orders and online purchasing workflows.</p>
+                <div class="stack-list stack-list-sm">
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="mt-3">
+                  <a class="btn btn-outline-dark btn-sm" href="contact.html">Discuss a Project Like This</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-6">
+            <article class="project-card h-100">
+              <!-- Visual container: replace with a real screenshot when available -->
+              <div class="project-placeholder" aria-hidden="true"><span>RM</span></div>
+              <div class="p-4 p-md-5 pt-3">
+                <span class="project-cat">Property Management</span>
+                <h2 class="h3 mt-2 mb-2">Rent Management System</h2>
+                <p class="text-secondary">A multi-tenant property management system for organising tenants, rent records, property information and management workflows.</p>
+                <div class="stack-list stack-list-sm">
+                  <span>Laravel</span>
+                  <span>Database-driven web application</span>
+                </div>
+                <div class="mt-3">
+                  <a class="btn btn-outline-dark btn-sm" href="contact.html">Discuss a Project Like This</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-6">
+            <article class="project-card h-100">
+              <!-- Visual container: replace with a real photo/diagram when available -->
+              <div class="project-placeholder" aria-hidden="true"><span>AD</span></div>
+              <div class="p-4 p-md-5 pt-3">
+                <span class="project-cat">IoT / Embedded Systems</span>
+                <h2 class="h3 mt-2 mb-2">Accident Detection System</h2>
+                <p class="text-secondary">A prototype safety system exploring automatic accident detection and location communication using embedded hardware.</p>
+                <p class="project-status mb-0">Prototype — a technical learning project, not a certified emergency product.</p>
+                <div class="stack-list stack-list-sm mt-3">
+                  <span>ESP32</span>
+                  <span>GPS</span>
+                  <span>GSM</span>
+                  <span>Sensors</span>
+                </div>
+                <div class="mt-3">
+                  <a class="btn btn-outline-dark btn-sm" href="contact.html">Discuss a Project Like This</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="exploration" class="section-padding bg-light-subtle">
+      <div class="container">
+        <div class="mb-5">
+          <span class="eyebrow">Exploration</span>
+          <h2 class="display-5 fw-bold mt-3 mb-0">Other work and experiments.</h2>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-4">
+            <div class="other-item">
+              <span class="other-item-mark" aria-hidden="true"></span>
+              <div>
+                <h3 class="other-item-title">Hotel Management System</h3>
+                <p class="other-item-text">Bookings, rooms, guests and front-desk workflows.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="other-item">
+              <span class="other-item-mark" aria-hidden="true"></span>
+              <div>
+                <h3 class="other-item-title">Business Websites</h3>
+                <p class="other-item-text">Responsive websites for businesses and local brands.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="other-item">
+              <span class="other-item-mark" aria-hidden="true"></span>
+              <div>
+                <h3 class="other-item-title">Flutter / Firebase Apps</h3>
+                <p class="other-item-text">Cross-platform mobile applications and experiments.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="other-item">
+              <span class="other-item-mark" aria-hidden="true"></span>
+              <div>
+                <h3 class="other-item-title">API Experiments</h3>
+                <p class="other-item-text">REST endpoints, authentication and data flows.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="other-item">
+              <span class="other-item-mark" aria-hidden="true"></span>
+              <div>
+                <h3 class="other-item-title">Electronics & Embedded Prototypes</h3>
+                <p class="other-item-text">Sensors, GPS/GSM communication and hardware tinkering.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="bento-card p-4 p-md-5">
+              <span class="eyebrow">Process</span>
+              <h2 class="display-5 fw-bold mt-3 mb-3">Built to Solve, Learn and Improve.</h2>
+              <p class="fs-5 text-secondary mb-0">Each project combines software development, business understanding and continuous technical learning — showing that practical problem-solving matters more than the tools on their own.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section section-padding">
+      <div class="container text-center">
+        <span class="eyebrow">Next Step</span>
+        <h2 class="display-4 fw-bold my-3">Have an idea worth building?</h2>
+        <p class="lead text-soft mx-auto max-copy">Bring the problem you're facing — we can explore whether practical software or technology can help.</p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+          <a href="contact.html" class="btn btn-light btn-lg">Start a Project</a>
+          <a href="services.html" class="btn btn-outline-light btn-lg">View Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-12 col-lg-5">
+          <a class="site-footer-logo" href="index.html">AlitUs<span>.</span></a>
+          <p class="site-footer-tagline mt-3 mb-0">Building practical digital solutions, software products, and technology that create real value for people and businesses.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <h2 class="site-footer-heading">Quick Links</h2>
+          <ul class="site-footer-links list-unstyled mb-0">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <h2 class="site-footer-heading">Contact</h2>
+          <ul class="site-footer-links list-unstyled mb-0">
+            <li>
+              <span class="site-footer-label">Phone</span>
+              <a class="site-footer-phone" href="tel:+256772918718" aria-label="Call +256 772 918 718">+256 772 918 718</a>
+            </li>
+            <li>
+              <span class="site-footer-label">Email</span>
+              <span class="site-footer-placeholder">coming soon</span>
+            </li>
+            <li>
+              <span class="site-footer-label">WhatsApp</span>
+              <span class="site-footer-placeholder">coming soon</span>
+            </li>
+            <li class="mt-3">
+              <a class="btn btn-brand site-footer-call" href="tel:+256772918718">Call Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer-bottom">
+        © <span id="currentYear"></span> Patrick Alituha / AlitUs. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
