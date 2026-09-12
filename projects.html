@@ -49,6 +49,7 @@
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close navigation menu"></button>
     </div>
     <div class="offcanvas-body">
+      <!-- EDIT: BRAND_TAGLINE (also used on the homepage hero context line) -->
       <p class="site-offcanvas-phrase">Smart Systems. Local Support.</p>
       <nav aria-label="Offcanvas navigation">
         <ul class="site-offcanvas-nav list-unstyled mb-0">
@@ -79,6 +80,7 @@
   </div>
 
   <main class="page-main">
+    <!-- CONTENT: PROJECTS_HERO -->
     <section class="page-hero projects-hero">
       <div class="container">
         <span class="eyebrow">My Work</span>
@@ -86,7 +88,9 @@
         <p class="lead text-soft max-copy">A selection of software, business systems and technology projects I have designed and developed while learning, building and solving practical challenges.</p>
       </div>
     </section>
+    <!-- /CONTENT: PROJECTS_HERO -->
 
+    <!-- CONTENT: PROJECT_SUNTRACK -->
     <section id="suntrack" class="featured-project section-padding">
       <div class="container">
         <div class="featured-inner">
@@ -95,7 +99,8 @@
               <span class="product-tag">Featured Project</span>
               <h2 class="display-4 fw-bold featured-title mt-3 mb-2">SunTrack</h2>
               <p class="featured-cat mb-4">Field Sales & Lead Management</p>
-              <p class="lead text-soft mb-4">SunTrack is a field-sales lead management platform designed to help teams manage prospects, mobilisers, follow-ups and field activity more effectively.</p>
+              <!-- EDIT: SUNTRACK_DESCRIPTION -->
+              <p class="lead text-soft mb-4" data-content-key="suntrack-description">SunTrack is a field-sales lead management platform designed to help teams manage prospects, mobilisers, follow-ups and field activity more effectively.</p>
               <div class="featured-block">
                 <h3 class="featured-block-title">Problem</h3>
                 <p>Field-sales teams can lose potential customers when leads, referrals and follow-ups are tracked informally.</p>
@@ -112,13 +117,17 @@
                 <span>Relational database</span>
               </div>
               <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
-                <a class="btn btn-brand btn-lg" href="#suntrack">View Details</a>
+                <!-- FUTURE LINK: SUNTRACK_LIVE_DEMO (link to the live app when available) -->
+                <!-- FUTURE LINK: SUNTRACK_GITHUB (link to the code repository when available) -->
+                <!-- FUTURE LINK: SUNTRACK_CASE_STUDY (link to a full case-study page when available) -->
+                <a class="btn btn-brand btn-lg" href="contact.html">Discuss This Project</a>
                 <span class="product-tag">In Development</span>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="featured-visual">
                 <div class="featured-visual-glow" aria-hidden="true"></div>
+                <!-- CONTENT ASSET: SunTrack visual (current: assets/images/projects/suntrack-project.svg illustration). Optional real screenshot folder: assets/images/projects/suntrack/ -->
                 <img src="assets/images/projects/suntrack-project.svg" class="featured-img" alt="SunTrack platform interface illustration" width="1200" height="675">
               </div>
             </div>
@@ -126,7 +135,9 @@
         </div>
       </div>
     </section>
+    <!-- /CONTENT: PROJECT_SUNTRACK -->
 
+    <!-- CONTENT: PROJECTS_GRID -->
     <section id="projects" class="section-padding">
       <div class="container">
         <div class="mb-5">
@@ -136,6 +147,10 @@
         <div class="row g-4">
           <div class="col-lg-6">
             <article class="project-card h-100">
+              <!-- EDIT: PROJECT_CARD (PatroniQ Store — name, description, stack) -->
+              <!-- CONTENT ASSET: PatroniQ visual (screenshot preferred) at assets/images/projects/patroniq-store/ -->
+              <!-- FUTURE LINK: PATRONIQ_GITHUB -->
+              <!-- FUTURE LINK: PATRONIQ_LIVE_DEMO -->
               <!-- Visual container: replace with a real screenshot when available -->
               <div class="project-placeholder" aria-hidden="true"><span>PQ</span></div>
               <div class="p-4 p-md-5 pt-3">
@@ -156,6 +171,10 @@
           </div>
           <div class="col-lg-6">
             <article class="project-card h-100">
+              <!-- EDIT: PROJECT_CARD (Rent Management — name, description, stack) -->
+              <!-- CONTENT ASSET: Rent Management visual (screenshot preferred) at assets/images/projects/rent-management/ -->
+              <!-- FUTURE LINK: RENT_MANAGEMENT_GITHUB -->
+              <!-- FUTURE LINK: RENT_MANAGEMENT_LIVE_DEMO -->
               <!-- Visual container: replace with a real screenshot when available -->
               <div class="project-placeholder" aria-hidden="true"><span>RM</span></div>
               <div class="p-4 p-md-5 pt-3">
@@ -174,6 +193,10 @@
           </div>
           <div class="col-lg-6">
             <article class="project-card h-100">
+              <!-- EDIT: PROJECT_CARD (Accident Detection — name, description, stack) -->
+              <!-- CONTENT ASSET: Accident Detection visual (photo/diagram preferred) at assets/images/projects/accident-detection/ -->
+              <!-- FUTURE LINK: ACCIDENT_DETECTION_GITHUB -->
+              <!-- FUTURE LINK: ACCIDENT_DETECTION_CASE_STUDY -->
               <!-- Visual container: replace with a real photo/diagram when available -->
               <div class="project-placeholder" aria-hidden="true"><span>AD</span></div>
               <div class="p-4 p-md-5 pt-3">
@@ -196,7 +219,9 @@
         </div>
       </div>
     </section>
+    <!-- /CONTENT: PROJECTS_GRID -->
 
+    <!-- CONTENT: EXPLORATION -->
     <section id="exploration" class="section-padding bg-light-subtle">
       <div class="container">
         <div class="mb-5">
@@ -252,7 +277,9 @@
         </div>
       </div>
     </section>
+    <!-- /CONTENT: EXPLORATION -->
 
+    <!-- CONTENT: PROCESS_NOTE -->
     <section class="section-padding">
       <div class="container">
         <div class="row justify-content-center">
@@ -266,7 +293,9 @@
         </div>
       </div>
     </section>
+    <!-- /CONTENT: PROCESS_NOTE -->
 
+    <!-- CONTENT: PROJECTS_CTA -->
     <section class="cta-section section-padding">
       <div class="container text-center">
         <span class="eyebrow">Next Step</span>
@@ -278,16 +307,21 @@
         </div>
       </div>
     </section>
+    <!-- /CONTENT: PROJECTS_CTA -->
   </main>
 
   <footer class="site-footer">
     <div class="container">
+      <!-- CONTENT: FOOTER_CTA -->
       <div class="site-footer-cta">
         <span class="eyebrow">Let's build something useful</span>
         <h2 class="site-footer-cta-title">Have an idea or problem technology could solve?</h2>
         <p class="site-footer-cta-text">Tell me what you're trying to build or improve, and let's explore a practical solution.</p>
         <a class="btn btn-brand site-footer-cta-btn" href="contact.html">Start a Conversation</a>
       </div>
+      <!-- /CONTENT: FOOTER_CTA -->
+      <!-- CONTENT: FOOTER_COLUMNS -->
+      <!-- FUTURE SOCIAL: LinkedIn, GitHub, X, Facebook or other AlitUs profiles — add icons/links here once URLs are supplied. -->
       <div class="row g-4 g-lg-5 site-footer-cols">
         <div class="col-12 col-lg-3">
           <a class="site-footer-logo" href="index.html">AlitUs<span>.</span></a>
@@ -315,6 +349,7 @@
           </ul>
         </div>
         <div class="col-12 col-lg-3">
+          <!-- EDIT: FOOTER_CONTACT_DETAILS (phone / WhatsApp / email) -->
           <h2 class="site-footer-heading">Contact</h2>
           <ul class="site-footer-links list-unstyled mb-0">
             <li>
@@ -332,6 +367,7 @@
           </ul>
         </div>
       </div>
+      <!-- /CONTENT: FOOTER_COLUMNS -->
       <div class="site-footer-bottom">
         <p class="site-footer-copy mb-0">© <span id="currentYear"></span> Patrick Alituha / AlitUs. All rights reserved.</p>
         <p class="site-footer-built mb-0">Built around real problems. Designed for practical impact.</p>

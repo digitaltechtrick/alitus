@@ -49,6 +49,7 @@
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close navigation menu"></button>
     </div>
     <div class="offcanvas-body">
+      <!-- EDIT: BRAND_TAGLINE (also used on the homepage hero context line) -->
       <p class="site-offcanvas-phrase">Smart Systems. Local Support.</p>
       <nav aria-label="Offcanvas navigation">
         <ul class="site-offcanvas-nav list-unstyled mb-0">
@@ -82,30 +83,36 @@
     <section class="page-hero about-hero">
       <div class="container">
         <div class="row align-items-center g-5">
+          <!-- CONTENT: HERO -->
           <div class="col-lg-7">
             <span class="eyebrow">About Patrick</span>
             <h1 class="display-3 fw-bold mt-4 mb-4">Building technology with a practical understanding of people and business.</h1>
+            <!-- EDIT: ABOUT_PROFESSIONAL_TITLE (role line) -->
             <p class="about-role mb-4">Software Developer | Technology Builder | Entrepreneur</p>
-            <p class="lead text-soft max-copy mb-4">“I'm Patrick Alituha, a Computer Science graduate focused on building practical software and technology solutions that solve real problems for people and businesses.”</p>
+            <!-- EDIT: ABOUT_INTRODUCTION (personal summary) -->
+            <p class="lead text-soft max-copy mb-4" data-content-key="about-intro">“I'm Patrick Alituha, a Computer Science graduate focused on building practical software and technology solutions that solve real problems for people and businesses.”</p>
             <span class="about-tagline"><span class="about-tagline-dot" aria-hidden="true"></span>Smart Systems. Local Support.</span>
           </div>
           <div class="col-lg-5">
             <!--
-              Profile photo
-              Place the real image at: assets/images/profile/patrick-alituha.jpg
-              The container below keeps an explicit portrait crop (object-fit: cover,
-              aspect 4/5) with moderate rounded corners and a subtle AlitUs Teal
-              border/glow, so the photo never distorts at any screen size.
+              CONTENT ASSET:
+              Profile photograph (portrait crop, object-fit: cover, aspect 4/5)
+              Expected path: assets/images/profile/patrick-alituha.jpg
+              Recommended: portrait, minimum ~1000px tall (this page reserves 640x800).
+              Until supplied, the neutral "PA" monogram placeholder below is shown.
             -->
             <div class="about-photo-wrap">
               <div class="about-photo-glow" aria-hidden="true"></div>
-              <img src="assets/images/profile/patrick-alituha.jpg" class="about-photo" alt="Portrait of Patrick Alituha" width="640" height="800">
+              <div class="about-photo-holder" role="img" aria-label="Placeholder portrait for Patrick Alituha">PA</div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- /CONTENT: HERO -->
 
+    <!-- CONTENT: BACKGROUND_STORY -->
+    <!-- FUTURE CONTENT: EDUCATION_DETAILS (university, degree emphasis, graduation year — add to the background story) -->
     <section id="background" class="section-padding pt-0">
       <div class="container">
         <div class="row g-4 g-lg-5 align-items-start">
@@ -114,12 +121,15 @@
             <h2 class="display-5 fw-bold mt-3 mb-lg-0">Technology Meets Real-World Experience</h2>
           </div>
           <div class="col-lg-7">
-            <p class="fs-5 text-secondary mb-0">“My background combines Computer Science with around five years of experience in sales. Working directly with customers and businesses has helped me understand that useful technology is not only about writing code — it must solve real operational problems, remain simple to use, and create measurable value.”</p>
+            <!-- EDIT: BACKGROUND_STORY_TEXT (sales + CS background quote) -->
+            <p class="fs-5 text-secondary mb-0" data-content-key="about-background">“My background combines Computer Science with around five years of experience in sales. Working directly with customers and businesses has helped me understand that useful technology is not only about writing code — it must solve real operational problems, remain simple to use, and create measurable value.”</p>
           </div>
         </div>
       </div>
     </section>
+    <!-- /CONTENT: BACKGROUND_STORY -->
 
+    <!-- CONTENT: WHAT_I_DO -->
     <section id="what-i-do" class="section-padding bg-light-subtle">
       <div class="container">
         <div class="mb-5">
@@ -151,7 +161,9 @@
         </div>
       </div>
     </section>
+    <!-- /CONTENT: WHAT_I_DO -->
 
+    <!-- CONTENT: APPROACH -->
     <section id="approach" class="section-padding">
       <div class="container">
         <div class="bento-card about-approach p-4 p-md-5">
@@ -161,7 +173,9 @@
         </div>
       </div>
     </section>
+    <!-- /CONTENT: APPROACH -->
 
+    <!-- CONTENT: TECHNOLOGIES -->
     <section id="technologies" class="section-padding bg-light-subtle">
       <div class="container">
         <div class="mb-5">
@@ -180,10 +194,13 @@
           <span>REST APIs</span>
           <span>Git / GitHub</span>
         </div>
+        <!-- EDIT: TECHNOLOGIES_NOTE (electronics / embedded systems blurb) -->
         <p class="text-secondary mt-4 mb-0 max-copy">Electronics and embedded systems are a growing technical area I'm exploring — hardware and connected systems. I'm earlier in that journey than in my software work, and I keep learning by building.</p>
       </div>
     </section>
+    <!-- /CONTENT: TECHNOLOGIES -->
 
+    <!-- CONTENT: DIRECTION -->
     <section id="direction" class="section-padding">
       <div class="container">
         <div class="row g-4 g-lg-5 align-items-start">
@@ -217,7 +234,9 @@
         </div>
       </div>
     </section>
+    <!-- /CONTENT: DIRECTION -->
 
+    <!-- CONTENT: ABOUT_CTA -->
     <section class="cta-section section-padding">
       <div class="container text-center">
         <span class="eyebrow">Next Step</span>
@@ -229,16 +248,21 @@
         </div>
       </div>
     </section>
+    <!-- /CONTENT: ABOUT_CTA -->
   </main>
 
   <footer class="site-footer">
     <div class="container">
+      <!-- CONTENT: FOOTER_CTA -->
       <div class="site-footer-cta">
         <span class="eyebrow">Let's build something useful</span>
         <h2 class="site-footer-cta-title">Have an idea or problem technology could solve?</h2>
         <p class="site-footer-cta-text">Tell me what you're trying to build or improve, and let's explore a practical solution.</p>
         <a class="btn btn-brand site-footer-cta-btn" href="contact.html">Start a Conversation</a>
       </div>
+      <!-- /CONTENT: FOOTER_CTA -->
+      <!-- CONTENT: FOOTER_COLUMNS -->
+      <!-- FUTURE SOCIAL: LinkedIn, GitHub, X, Facebook or other AlitUs profiles — add icons/links here once URLs are supplied. -->
       <div class="row g-4 g-lg-5 site-footer-cols">
         <div class="col-12 col-lg-3">
           <a class="site-footer-logo" href="index.html">AlitUs<span>.</span></a>
@@ -266,6 +290,7 @@
           </ul>
         </div>
         <div class="col-12 col-lg-3">
+          <!-- EDIT: FOOTER_CONTACT_DETAILS (phone / WhatsApp / email) -->
           <h2 class="site-footer-heading">Contact</h2>
           <ul class="site-footer-links list-unstyled mb-0">
             <li>
@@ -283,6 +308,7 @@
           </ul>
         </div>
       </div>
+      <!-- /CONTENT: FOOTER_COLUMNS -->
       <div class="site-footer-bottom">
         <p class="site-footer-copy mb-0">© <span id="currentYear"></span> Patrick Alituha / AlitUs. All rights reserved.</p>
         <p class="site-footer-built mb-0">Built around real problems. Designed for practical impact.</p>

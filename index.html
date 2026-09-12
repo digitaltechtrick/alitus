@@ -69,6 +69,7 @@
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close navigation menu"></button>
     </div>
     <div class="offcanvas-body">
+      <!-- EDIT: BRAND_TAGLINE (also used on the homepage hero context line) -->
       <p class="site-offcanvas-phrase">Smart Systems. Local Support.</p>
       <nav aria-label="Offcanvas navigation">
         <ul class="site-offcanvas-nav list-unstyled mb-0">
@@ -101,6 +102,7 @@
   <main>
     <section id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="7000" data-bs-pause="hover" data-bs-touch="true" aria-label="Hero carousel">
       <div class="carousel-inner">
+        <!-- CONTENT: HERO_SLIDE_1_ALITUS -->
         <div class="carousel-item active">
           <div class="hero-slide">
             <div class="container">
@@ -119,6 +121,13 @@
                   <div class="hero-visual">
                     <span class="hero-visual-mark" aria-hidden="true"></span>
                     <div class="hero-visual-frame">
+                      <!--
+                        CONTENT ASSET:
+                        Patrick profile photograph (hero slide 1 visual)
+                        Expected path: assets/images/profile/patrick-alituha.jpg
+                        Recommended: portrait crop, minimum ~1000px tall
+                        Until supplied, this neutral placeholder is shown.
+                      -->
                       <div class="hero-visual-profile" role="img" aria-label="Placeholder portrait for Patrick Alituha">
                         <span>PA</span>
                       </div>
@@ -129,6 +138,8 @@
             </div>
           </div>
         </div>
+        <!-- /CONTENT: HERO_SLIDE_1_ALITUS -->
+        <!-- CONTENT: HERO_SLIDE_2_SUNTRACK -->
         <div class="carousel-item">
           <div class="hero-slide">
             <div class="container">
@@ -147,6 +158,12 @@
                   <div class="hero-visual">
                     <span class="hero-visual-mark" aria-hidden="true"></span>
                     <div class="hero-visual-frame">
+                      <!--
+                        CONTENT ASSET:
+                        SunTrack product visual (hero slide 2)
+                        Current: assets/images/products/suntrack.svg (illustration)
+                        Optional real screenshot when available: assets/images/products/suntrack/
+                      -->
                       <img src="assets/images/products/suntrack.svg" class="hero-visual-img" width="900" height="600" alt="SunTrack GPS tracking dashboard illustration">
                     </div>
                   </div>
@@ -155,6 +172,8 @@
             </div>
           </div>
         </div>
+        <!-- /CONTENT: HERO_SLIDE_2_SUNTRACK -->
+        <!-- CONTENT: HERO_SLIDE_3_SERVICES -->
         <div class="carousel-item">
           <div class="hero-slide">
             <div class="container">
@@ -173,6 +192,12 @@
                   <div class="hero-visual">
                     <span class="hero-visual-mark" aria-hidden="true"></span>
                     <div class="hero-visual-frame">
+                      <!--
+                        CONTENT ASSET:
+                        Business-system visual (hero slide 3)
+                        Current: assets/images/products/business-system.svg (illustration)
+                        Optional real screenshot when available: assets/images/products/
+                      -->
                       <img src="assets/images/products/business-system.svg" class="hero-visual-img" width="900" height="600" alt="Business management dashboard illustration">
                     </div>
                   </div>
@@ -182,6 +207,7 @@
           </div>
         </div>
       </div>
+      <!-- /CONTENT: HERO_SLIDE_3_SERVICES -->
       <div class="container">
         <div class="hero-controls">
           <span class="hero-count" aria-live="polite"><span class="hero-count-current" id="heroCount">01</span><span class="hero-count-total">/ 03</span></span>
@@ -203,6 +229,13 @@
     </section>
 
     <section id="products" class="section-padding bg-light-subtle">
+      <!-- CONTENT: CURRENT_PRODUCTS_SECTION -->
+      <!--
+        Current-product carousel. Patrick updates this when a new AlitUs product
+        is available: add a new carousel-item as PRODUCT SLOT 4, or replace the
+        content inside an existing slot. Keep at least the illustrated product
+        visual or add a real screenshot under assets/images/products/.
+      -->
       <div class="container">
         <div class="section-heading d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-5">
           <div>
@@ -219,6 +252,7 @@
             <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Mobile Solutions"></button>
           </div>
           <div class="carousel-inner rounded-4 overflow-hidden shadow-sm">
+            <!-- PRODUCT SLOT 1: SunTrack -->
             <div class="carousel-item active">
               <article class="product-slide product-slide-blue">
                 <div class="row align-items-center g-0">
@@ -234,6 +268,8 @@
                 </div>
               </article>
             </div>
+            <!-- /PRODUCT SLOT 1 -->
+            <!-- PRODUCT SLOT 2: Custom Business Systems (replace/update when a new AlitUs product is available) -->
             <div class="carousel-item">
               <article class="product-slide product-slide-dark">
                 <div class="row align-items-center g-0">
@@ -249,6 +285,8 @@
                 </div>
               </article>
             </div>
+            <!-- /PRODUCT SLOT 2 -->
+            <!-- PRODUCT SLOT 3: Mobile Solutions (replace/update when a new AlitUs product is available) -->
             <div class="carousel-item">
               <article class="product-slide product-slide-teal">
                 <div class="row align-items-center g-0">
@@ -265,6 +303,8 @@
               </article>
             </div>
           </div>
+          <!-- /PRODUCT SLOT 3 -->
+          <!-- /CONTENT: CURRENT_PRODUCTS_SECTION -->
           <button class="carousel-control-prev carousel-arrow" type="button" data-bs-target="#productCarousel" data-bs-slide="prev" aria-label="Previous product">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           </button>
@@ -279,6 +319,7 @@
       <div class="container">
         <div class="row g-4 g-lg-5 align-items-center">
           <div class="col-lg-6">
+            <!-- CONTENT: ABOUT_PREVIEW -->
             <span class="eyebrow text-primary-emphasis">About me</span>
             <h2 id="aboutPreviewHeading" class="display-6 fw-bold mt-3 mb-3">I build technology around real problems.</h2>
             <p class="text-secondary mb-3">I'm Patrick Alituha, a software developer and technology builder focused on creating practical digital solutions for businesses and everyday challenges.</p>
@@ -319,6 +360,7 @@
         </div>
       </div>
     </section>
+    <!-- /CONTENT: ABOUT_PREVIEW -->
 
     <section class="section-padding bg-light-subtle">
       <div class="container">
@@ -326,6 +368,7 @@
           <span class="eyebrow text-primary-emphasis">Selected work</span>
           <h2 class="display-6 fw-bold">Projects built around real needs.</h2>
         </div>
+        <!-- CONTENT: FEATURED_PROJECTS -->
         <div class="row g-4">
           <div class="col-lg-7">
             <article class="project-card project-featured h-100">
@@ -336,6 +379,7 @@
                   <span class="badge rounded-pill text-bg-primary">Flutter + Laravel</span>
                 </div>
                 <p class="text-secondary">A focused system for field-sales lead management, follow-up activity and sales-team organization.</p>
+                <!-- FUTURE LINK: SUNTRACK_CASE_STUDY (full case-study page when ready) -->
                 <a href="projects.html#suntrack" class="text-link">View case study →</a>
               </div>
             </article>
@@ -344,6 +388,7 @@
             <div class="row g-4">
               <div class="col-12">
                 <article class="project-card">
+                  <!-- EDIT: FEATURED_PROJECT (homepage preview — PatroniQ Store name, description) -->
                   <div class="p-4">
                     <span class="small text-uppercase text-secondary">Web platform</span>
                     <h3 class="h4 mt-2">PatroniQ Store</h3>
@@ -353,6 +398,7 @@
               </div>
               <div class="col-12">
                 <article class="project-card">
+                  <!-- EDIT: FEATURED_PROJECT (homepage preview — Rent Management name, description) -->
                   <div class="p-4">
                     <span class="small text-uppercase text-secondary">Business system</span>
                     <h3 class="h4 mt-2">Rent Management</h3>
@@ -368,6 +414,7 @@
         </div>
       </div>
     </section>
+    <!-- /CONTENT: FEATURED_PROJECTS -->
 
     <section class="section-padding">
       <div class="container">
@@ -378,6 +425,7 @@
             <a href="services.html" class="text-link">Explore services →</a>
           </div>
           <div class="col-lg-8">
+            <!-- CONTENT: SERVICES_PREVIEW -->
             <div class="row g-4">
               <div class="col-md-6"><div class="service-card"><span>01</span><h3>Website Development</h3><p>Responsive, modern websites for brands, organizations and businesses.</p></div></div>
               <div class="col-md-6"><div class="service-card"><span>02</span><h3>Mobile Apps</h3><p>Cross-platform applications focused on practical user workflows.</p></div></div>
@@ -388,7 +436,9 @@
         </div>
       </div>
     </section>
+    <!-- /CONTENT: SERVICES_PREVIEW -->
 
+    <!-- CONTENT: HOME_CTA -->
     <section class="cta-section section-padding">
       <div class="container text-center">
         <span class="eyebrow">Have an idea?</span>
@@ -397,16 +447,21 @@
         <a href="contact.html" class="btn btn-light btn-lg mt-3">Start a Conversation</a>
       </div>
     </section>
+    <!-- /CONTENT: HOME_CTA -->
   </main>
 
   <footer class="site-footer">
     <div class="container">
+      <!-- CONTENT: FOOTER_CTA -->
       <div class="site-footer-cta">
         <span class="eyebrow">Let's build something useful</span>
         <h2 class="site-footer-cta-title">Have an idea or problem technology could solve?</h2>
         <p class="site-footer-cta-text">Tell me what you're trying to build or improve, and let's explore a practical solution.</p>
         <a class="btn btn-brand site-footer-cta-btn" href="contact.html">Start a Conversation</a>
       </div>
+      <!-- /CONTENT: FOOTER_CTA -->
+      <!-- CONTENT: FOOTER_COLUMNS -->
+      <!-- FUTURE SOCIAL: LinkedIn, GitHub, X, Facebook or other AlitUs profiles — add icons/links here once URLs are supplied. -->
       <div class="row g-4 g-lg-5 site-footer-cols">
         <div class="col-12 col-lg-3">
           <a class="site-footer-logo" href="index.html">AlitUs<span>.</span></a>
@@ -434,6 +489,7 @@
           </ul>
         </div>
         <div class="col-12 col-lg-3">
+          <!-- EDIT: FOOTER_CONTACT_DETAILS (phone / WhatsApp / email) -->
           <h2 class="site-footer-heading">Contact</h2>
           <ul class="site-footer-links list-unstyled mb-0">
             <li>
@@ -451,6 +507,7 @@
           </ul>
         </div>
       </div>
+      <!-- /CONTENT: FOOTER_COLUMNS -->
       <div class="site-footer-bottom">
         <p class="site-footer-copy mb-0">© <span id="currentYear"></span> Patrick Alituha / AlitUs. All rights reserved.</p>
         <p class="site-footer-built mb-0">Built around real problems. Designed for practical impact.</p>
