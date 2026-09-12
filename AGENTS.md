@@ -34,11 +34,12 @@ The report must:
 - contain no ANSI terminal formatting
 - contain no decorative Unicode that makes copying difficult
 - avoid unnecessary tables
-- be contained inside ONE fenced text block
+- be contained inside ONE fenced Markdown code block using the `text` language tag, i.e. opened and closed with triple backticks: ```text ... ```
 - be ready for Patrick to copy directly into ChatGPT
 
-Use exactly this structure:
+Use exactly this structure (the entire report goes inside one ```text fenced block):
 
+```text
 COPYABLE REPORT
 
 Task:
@@ -71,6 +72,7 @@ Issues / pending:
 - None
 OR
 - <remaining issue>
+```
 
 Important:
 The COPYABLE REPORT must always be the final section of the agent response.
