@@ -8,6 +8,19 @@
     });
   }
 
+  const hero = document.getElementById('heroCarousel');
+  if (hero) {
+    const heroCount = hero.querySelector('.hero-count-current');
+    const heroIndicators = hero.querySelectorAll('.carousel-indicators [data-bs-slide-to]');
+    hero.addEventListener('slide.bs.carousel', (event) => {
+      if (heroCount) heroCount.textContent = String(event.to + 1).padStart(2, '0');
+      heroIndicators.forEach((indicator, index) => {
+        if (index === event.to) indicator.setAttribute('aria-current', 'true');
+        else indicator.removeAttribute('aria-current');
+      });
+    });
+  }
+
   const nav = document.querySelector('.site-nav');
   const updateNav = () => {
     if (nav) nav.classList.toggle('scrolled', window.scrollY > 12);
