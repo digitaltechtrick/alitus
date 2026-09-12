@@ -125,4 +125,5 @@ Do not add visible "Coming soon" / "TODO" text — that styling is left to this 
 - [x] Email: digitaltechtrick@gmail.com
 - [ ] Location and business hours (CONTACT_LOCATION)
 - [ ] Social links (LinkedIn, GitHub, etc.)
-- [ ] Connect the contact form to email/server (currently demo-only with client-side validation)
+- [x] Formspree backend — V1 active
+- [x] Formspree endpoint — https://formspree.io/f/mdeojqgj

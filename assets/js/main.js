@@ -31,7 +31,12 @@
   const form = document.getElementById('contactForm');
   const status = document.getElementById('formStatus');
   if (form) {
-    form.addEventListener('submit', (event) => {
+    const submitButton = form.querySelector('button[type="submit"]');
+    const buttonLabel = submitButton ? submitButton.textContent.trim() : '';
+    const successMessage = 'Thanks for reaching out. Your project inquiry has been received. I\u2019ll review the details and get back to you using the contact information you provided.';
+    const failureMessage = 'I couldn\u2019t send your inquiry right now. Please try again, or contact me directly by WhatsApp, phone or email.';
+
+    form.addEventListener('submit', async (event) => {
       event.preventDefault();
       event.stopPropagation();
       form.classList.add('was-validated');
@@ -41,7 +46,43 @@
         return;
       }
 
-      if (status) status.textContent = 'This demo form is not connected to email yet. Please contact me directly by phone, WhatsApp or email.';
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+      }
+      if (status) {
+        status.className = 'form-status mt-3';
+        status.textContent = '';
+      }
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (!response.ok) {
+          throw new Error(`Formspree request failed with status ${response.status}`);
+        }
+
+        if (status) {
+          status.className = 'form-status mt-3 text-success';
+          status.textContent = successMessage;
+        }
+        form.reset();
+        form.classList.remove('was-validated');
+      } catch (error) {
+        if (status) {
+          status.className = 'form-status mt-3 text-danger';
+          status.textContent = failureMessage;
+        }
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = buttonLabel;
+        }
+      }
     });
   }
 })();
