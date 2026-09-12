@@ -31,34 +31,90 @@
   </nav>
 
   <main>
-    <section class="hero d-flex align-items-center">
-      <div class="container py-5">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-7">
-            <span class="eyebrow">Software Developer • Builder • Entrepreneur</span>
-            <h1 class="display-3 fw-bold mt-3 mb-4">I build practical digital solutions for real-world problems.</h1>
-            <p class="lead text-soft mb-4">I'm Patrick Alituha. I create web platforms, mobile applications and business systems, while building products of my own.</p>
-            <div class="d-flex flex-wrap gap-3">
-              <a class="btn btn-brand btn-lg" href="#products">Explore Products</a>
-              <a class="btn btn-outline-light btn-lg" href="projects.html">View My Work</a>
+    <section id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="6500" data-bs-pause="hover" aria-label="Hero carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: AlitUs"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2: SunTrack"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3: Custom Software"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-slide">
+            <div class="container py-5">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                  <span class="eyebrow">Software Developer • Builder • Entrepreneur</span>
+                  <h1 class="display-3 fw-bold mt-3 mb-4">Turning Ideas Into Real Solutions</h1>
+                  <p class="lead text-soft mb-4">Practical software, digital products, and technology solutions built to help people and businesses work smarter.</p>
+                  <div class="d-flex flex-wrap gap-3">
+                    <a class="btn btn-brand btn-lg" href="projects.html">Explore My Work</a>
+                    <a class="btn btn-outline-light btn-lg" href="contact.html">Let's Work Together</a>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="hero-card">
+                    <div class="profile-placeholder" role="img" aria-label="Placeholder for Patrick Alituha profile photo">
+                      <span>PA</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end mt-4">
+                      <div>
+                        <small class="text-uppercase text-soft">Currently building</small>
+                        <h2 class="h4 mb-0">Software & digital products</h2>
+                      </div>
+                      <span class="status-dot" title="Active"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-5">
-            <div class="hero-card">
-              <div class="profile-placeholder" role="img" aria-label="Placeholder for Patrick Alituha profile photo">
-                <span>PA</span>
-              </div>
-              <div class="d-flex justify-content-between align-items-end mt-4">
-                <div>
-                  <small class="text-uppercase text-soft">Currently building</small>
-                  <h2 class="h4 mb-0">Software & digital products</h2>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide">
+            <div class="container py-5">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                  <span class="badge text-bg-primary mb-3">Featured Product</span>
+                  <h1 class="display-3 fw-bold mb-4">Manage Field Sales Smarter With SunTrack</h1>
+                  <p class="lead text-soft mb-4">Track leads, follow-ups, mobilisers, and field-sales activity from one simple platform.</p>
+                  <div class="d-flex flex-wrap gap-3">
+                    <a class="btn btn-brand btn-lg" href="projects.html#suntrack">View SunTrack</a>
+                    <a class="btn btn-outline-light btn-lg" href="contact.html">Contact Me</a>
+                  </div>
                 </div>
-                <span class="status-dot" title="Active"></span>
+                <div class="col-lg-5">
+                  <img src="assets/images/products/suntrack.svg" class="img-fluid product-image" alt="SunTrack product illustration">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide">
+            <div class="container py-5">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                  <h1 class="display-3 fw-bold mb-4">Software Built Around Your Business</h1>
+                  <p class="lead text-soft mb-4">Websites, mobile applications, APIs, and business management systems designed around real operational needs.</p>
+                  <div class="d-flex flex-wrap gap-3">
+                    <a class="btn btn-brand btn-lg" href="services.html">View Services</a>
+                    <a class="btn btn-outline-light btn-lg" href="contact.html">Start a Project</a>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <img src="assets/images/products/business-system.svg" class="img-fluid product-image" alt="Custom software illustration">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <button class="carousel-control-prev carousel-arrow" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next carousel-arrow" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
     </section>
 
     <section id="products" class="section-padding bg-light-subtle">
