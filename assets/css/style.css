@@ -71,6 +71,17 @@ a { text-decoration: none; }
 .site-nav .btn-brand { border-radius: 999px; box-shadow: none; }
 .site-nav .btn-brand:hover { transform: none; }
 
+/* BRAND LOGO READY
+   Rules below are inert today: they only apply once a final logo <img> is placed
+   inside the header/footer/offcanvas wordmark links (slots marked in the HTML).
+   Heights mirror the current text wordmark so header/footer dimensions stay the same.
+   Header nav:      <img src="assets/images/brand/alitus-logo.svg" alt="AlitUs"> in .navbar-brand
+   Footer:          <img src="assets/images/brand/alitus-logo.svg" alt="AlitUs"> in .site-footer-logo
+   Offcanvas panel: <img src="assets/images/brand/alitus-logo-mark.svg" alt="AlitUs"> in .offcanvas-title */
+.site-nav .navbar-brand img { display: inline-block; max-width: none; width: auto; height: 1.2rem; vertical-align: middle; }
+.site-footer-logo img { display: inline-block; width: auto; height: 1.4rem; vertical-align: middle; }
+.site-offcanvas .offcanvas-title img { display: inline-block; max-width: none; width: auto; height: 1.3rem; vertical-align: middle; }
+
 .site-offcanvas { --bs-offcanvas-width: min(20rem, 85vw); background: var(--black); color: var(--text-on-dark); }
 .site-offcanvas .offcanvas-header { padding: 1.15rem 1.35rem; border-bottom: 1px solid var(--border-color-dark); }
 .site-offcanvas .offcanvas-title { font-size: 1.3rem; font-weight: 800; letter-spacing: -.02em; color: var(--text-on-dark); }

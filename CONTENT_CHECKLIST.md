@@ -18,9 +18,35 @@ Do not add visible "Coming soon" / "TODO" text — that styling is left to this 
 - [x] Brand name: AlitUs
 - [x] Tagline: "Smart Systems. Local Support."
 - [x] Brand color: AlitUs Teal `#0F766E`
-- [ ] Logo asset (expected `assets/images/brand/logo.svg`, currently no logo file — text logo used)
-- [ ] Favicon set (`assets/images/brand/favicon.png`, apple-touch-icon, etc.)
-- [ ] Social sharing preview image (Open Graph / Twitter card)
+- [x] Brand assets folder: `assets/images/brand/` (folder ready, `.gitkeep`)
+
+### Brand & logo assets (expected paths)
+
+| Asset | Path | Use |
+| --- | --- | --- |
+| Horizontal logo | `assets/images/brand/alitus-logo.svg` | Header `.navbar-brand` and footer `.site-footer-logo` (replaces the current text wordmark). Inert sizing CSS is already in `assets/css/style.css`. |
+| Icon / logo mark | `assets/images/brand/alitus-logo-mark.svg` | Offcanvas panel title (and favicon source). |
+| Classic favicon | `assets/images/brand/favicon.ico` | `<link rel="icon">` in every page `<head>` (not added yet — would be a broken reference). |
+| 32px favicon | `assets/images/brand/favicon-32x32.png` | `<link rel="icon" type="image/png">` in every page `<head>`. |
+| Apple touch icon | `assets/images/brand/apple-touch-icon.png` | `<link rel="apple-touch-icon">` in every page `<head>`. |
+| Social preview | `assets/images/brand/alitus-social-preview.jpg` | Open Graph / Twitter card `<meta>` images in every page `<head>`. |
+
+### Recommended logo constraints
+
+- Horizontal logo lockup (suits the single-line header/footer).
+- Separate icon / logo mark.
+- Works on dark and light surfaces (navigation and footer are dark; light page sections exist).
+- Transparent background for the SVG exports.
+- Official AlitUs Teal `#0F766E` as the primary brand color.
+- Neutral black/white variants where necessary (e.g. monochrome favicon).
+
+### Integration notes
+
+- [ ] Drop the 6 files above into `assets/images/brand/` (folder now exists).
+- [ ] Logo SVG: swap the text wordmark for `<img src="assets/images/brand/alitus-logo.svg" alt="AlitUs">` in the header/footer slots marked in the HTML.
+- [ ] Logo mark: swap the offcanvas title text for `<img src="assets/images/brand/alitus-logo-mark.svg" alt="AlitUs">`.
+- [ ] Add favicon + apple-touch-icon `<link>` tags to all 5 pages once the files exist (not added yet — avoid broken references).
+- [ ] Add Open Graph / Twitter card `<meta>` tags on all 5 pages once `alitus-social-preview.jpg` exists.
 - [ ] LinkedIn profile URL
 - [ ] GitHub profile URL (note: `https://github.com/digitaltechtrick/alitus` is the site repository, not the personal profile)
 - [ ] Facebook / X / other social URLs
