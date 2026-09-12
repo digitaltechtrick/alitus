@@ -132,6 +132,8 @@ a { text-decoration: none; }
 .project-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: var(--border-color-strong); }
 .project-cover { width: 100%; aspect-ratio: 16/9; object-fit: cover; background: var(--bg-surface); }
 .page-hero.projects-hero h1 { max-width: 26ch; }
+.page-hero.services-hero h1 { max-width: 24ch; }
+.tech-strip .stack-list { justify-content: center; }
 .featured-project { position: relative; background: linear-gradient(135deg, var(--black) 0%, var(--bg-surface-dark) 100%); color: var(--white); }
 .featured-inner { padding: clamp(2rem, 4vw, 3.5rem); border: 1px solid var(--border-color-dark); border-radius: 2rem; background: rgba(255, 255, 255, .03); }
 .featured-title { letter-spacing: -.03em; }
